@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoffeeCalculator</string>
+    <string name="amount_of_coffee">Ounces of coffee</string>
+    <string name="calculate">Calculate</string>
+</resources>
