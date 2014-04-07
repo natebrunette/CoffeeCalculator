@@ -72,15 +72,17 @@ public class CalculateActivity extends Activity
 
         double coffeeAmount = targetYield / (RATIO - (waterAbsorbedMultiplier - EXPECTED_EXTRACTION));
         double waterAmount = targetYield + (waterAbsorbedMultiplier * coffeeAmount) + (EXPECTED_EXTRACTION * coffeeAmount);
+        double bloomAmount = waterAmount * .10;
 
         // get values to 2 decimals
         BigDecimal coffee = new BigDecimal(coffeeAmount).setScale(2, RoundingMode.HALF_UP);
         BigDecimal water = new BigDecimal(waterAmount).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal bloom = new BigDecimal(bloomAmount).setScale(2, RoundingMode.HALF_UP);
 
         // Create the text view
         TextView output = new TextView(this);
         output.setTextSize(20);
-        output.setText("Coffee: " + coffee + "g\n" + "Water: " + water + "g");
+        output.setText("Coffee: " + coffee + "g\n" +"Bloom: " + bloom + "g\n" + "Total Water: " + water + "g");
 
         // Set the text view as the activity layout
         setContentView(output);
