@@ -3,4 +3,13 @@
     <string name="app_name">CoffeeCalculator</string>
     <string name="amount_of_coffee">Ounces of coffee</string>
     <string name="calculate">Calculate</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="settings">Settings</string>
+    <string name="pref_amountAbsorbed">Amount Absorbed</string>
+    <string name="pref_absorbed_summary">
+        The estimated amount of water that will be absorbed during the brewing process based on the mass of the coffee
+        grounds used.  For example, if this value is 2.3 and the amount of coffee you\'re brewing is 20g, the
+        calculation will assume 46g (2.3 * 20) of water will be absorbed.  Tweak this number accordingly based on
+        actual yield.
+    </string>
 </resources>

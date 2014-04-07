@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="pref_amountAbsorbed"
+        android:title="@string/pref_amountAbsorbed"
+        android:dialogTitle="@string/pref_amountAbsorbed"
+        android:summary="@string/pref_absorbed_summary"
+        android:defaultValue="2.3" />
+</PreferenceScreen>

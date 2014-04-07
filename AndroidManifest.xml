@@ -4,7 +4,10 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="18"/>
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.DeviceDefault">
         <activity android:name="com.tebru.CoffeeCalculator.MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -13,5 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.tebru.CoffeeCalculator.CalculateActivity"/>
+        <activity android:name="com.tebru.CoffeeCalculator.SettingsActivity"/>
     </application>
 </manifest>
